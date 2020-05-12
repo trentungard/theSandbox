@@ -1,0 +1,124 @@
+header{
+    font-family: 'Baloo Paaji 2', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-column: 1 / span 2;
+    background-color: #e5e5e5;
+    // background-color: #000730;
+    color: #32c1ff;
+    padding: 20px 5%;
+    .welcomeWrapper{
+        background-color: white;
+        border: 5px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        p{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        color: black;
+        margin: 0;
+        }
+        p:after{
+            content: '👋';
+            margin-left: 10px;
+        }
+    }
+
+    .colorWrapper{
+        display: none;
+        border: 5px solid black;
+        border-radius: 20px;
+        color: white;
+        background-image:
+            linear-gradient(#3247ff,#3247ff),
+            linear-gradient(#1969ff,#1969ff),
+            linear-gradient(#329fff,#329fff),
+            linear-gradient(#32c1ff,#32c1ff);
+        background-size:
+            calc(1 * (100% / 4)) 100%,
+            calc(2 * (100% / 4)) 100%,
+            calc(3 * (100% / 4)) 100%,
+            calc(4 * (100% / 4)) 100%;
+        background-repeat:no-repeat;
+
+        .fa-chevron-down{
+            margin-left:50%;
+            cursor: pointer;
+        }
+        p{
+            text-align: right;
+            font-weight: initial;
+            background-color: initial;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            font-weight: initial;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        input {
+            grid-row: 1 / span 1;
+            justify-self: center;
+        }
+        label {
+            grid-row: 2 / span 1;
+            text-align: center;
+        }
+        .colorInput{
+            display: none;
+            input{
+                display: none;
+            }
+            label{
+                display: none;
+            }
+        }
+    }
+
+    
+    nav{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        ul{
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                padding: 5px;
+                display: block;
+                display: inline;
+            }
+            li:nth-child(even){
+                border: 3px solid #00bfff;
+                background-color: white;
+                border-radius: 5px;
+                color: #000730;
+                box-shadow: 5px 5px black;
+            }
+            li:nth-child(odd){
+                border: 3px solid white;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                border: 3px solid #00bfff;
+                box-shadow: 5px 5px black;
+            }
+            li:hover{
+                cursor: pointer;
+                padding: 6px;
+                box-shadow: 7px 7px black;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.boxSection{
+    grid-column: 1 / span 2;
+    background-color: #1969ff;
+    .boxContainer{        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            width: 25vw;
+            height: 25vw;
+            margin: 30px;
+            min-width: 150px;
+            min-height: 150px;
+            max-width: 250px;
+            max-height: 250px;
+            border-radius: 2vw;
+            padding: 20px 10px;
+            justify-content: center;
+            align-content: flex-start;
+            box-shadow: 10px 10px black;
+            button:hover{
+                cursor: pointer;
+                width: 11vw;
+                min-width: 65px;
+                height: 50px;
+                border: 5px solid white;
+                background-color: black;
+                color: white;
+                transition: .2s;
+            }
+        }
+        div:nth-child(4n + 1){
+            background-color: #000730;
+        }
+        div:nth-child(4n + 2){
+            background-color: #00bfff;
+        }
+        div:nth-child(4n + 3){
+            background-color: #0037ff;
+        }
+        div:nth-child(4n + 4){
+            background-color: #3247ff;
+        }
+    }
+}

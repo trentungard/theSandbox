@@ -1,0 +1,22 @@
+@import 'queries';
+@import 'header';
+@import 'button';
+@import 'input';
+@import 'description';
+@import 'boxSection';
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    main{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / span 4;
+    }
+    footer{}
+}

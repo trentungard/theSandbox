@@ -1,0 +1,37 @@
+@media(min-width: 600px){
+    .container{
+        header{
+            .welcomeWrapper{
+            width: 30%;
+            }
+            .colorWrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 10%;
+                width: 60%;
+                p{
+                    width: 100%;
+                }
+                .colorInput{
+                    display: none;
+                    width: 100%;
+                    display: grid;
+                    justify-items: center;
+                    grid-template-rows: 1fr 1fr;
+                }
+                p{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 700px){
+    .container{
+        header{
+
+        }
+    }
+}
